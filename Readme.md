@@ -1,35 +1,88 @@
 #Just a repository to practice Git and GitHub...
 You can either add documentations on technologies, you can add your basic programs in any languages, you can add your projects or, if you don't have any of the above, just read all the steps, you will get to know the steps for contribution and I have a surprise at the end ;)
 
-How to contribute?
+<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
 
- 1: Fork this repository and name it according to you.
- 2: Copy the URL.
- 3: Open a folder in your PC where you want to store the files and folder.
- 4: Right click and click Git Bash here.
- 5: Once the terminal opens, type in git clone url (here, paste the url)
- 6: Close git bash.
- 7: To add something like your project or basic codes or documentation;
-    a: Create your own folder by a specific name of choice.
-    b: Add your files or folder according to your need with proper names.
- 8: In the main folder, again click git bash here(main folder is by the name of your fork)
- 9: Follow the commands given below;
-    a: type in - git checkout -b"Branch-name"
-               "Branch-name"->"type any branch name without space in between"
-    b: type in - git add . or git add filename.extension
-               filename.extension can be name.txt or something like this.
-    c: type in - git commit m-"Message"
-               "Message"->"Type anything that specifies your change and can have space in between"
-    d: type in - git push origin branchname
-               type your branch name on which your are right now.
- 10: open your forked repository.
- 11: You will find compare and pull request, click on it.
- 12: Submit the pull request after the page is opened.
+## Fork the repository
+Fork the repository by clicking on fork button as shown in the image and then name it according to you.
+This will create a copy of this repository in you account.
 
- Before pushing the changes, I would like you to add your name and github profile url in the contributors.md file. Neither on the top nor in bottom, Somewhere in the middle.
+## Clone the repository
 
- Those who don't have anything to push in the repository, documentation or files or project, can simply just add their name and profile url in contributors.md file.
+<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
 
+Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
 
- And done....! Here it is, your own contribution to the open source community.
- Whatever it is, celebrate and tell your friends who are just starting with git and github. 
+Open the file location, where you want to copy this repository. Right click, and then click Git bash here.
+This will open a terminal. 
+
+Type in-
+```
+git clone "url you just copied"
+```
+where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project that you saved according to your choice of name).
+
+<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="copy URL to clipboard" />
+
+For example:
+
+```
+git clone https://github.com/username/first-contribution.git
+```
+
+where `username` is your GitHub username. Here you're copying the contents of the first-pullrequest repository on GitHub to your computer.
+
+## Create a branch
+
+As you cannot directly commit changes to the main branch, create your own branch.
+
+Open the file location where you cloned the repository, open `first-contribution` folder.
+Right click and click on git bash here.
+
+Once the terminal opens, type in - 
+
+```
+git checkout -b your-new-branch-name
+```
+Instead of your-new-branch-name, type whatever name you want to, without space. And if there are multiple names, use the above given format and use `-` in between two names.
+
+## Committing
+
+To add your work, create new folder in the `first-contribution` folder and name them according to either technologies used like Java, CSS, Python, HTML, etc. Categorize it further by creating more folders that states whats inside of this folder like documentation, code, Readme, etc.
+
+If you just started with Git and GitHub and have no basic project or documentation, don't worry. 
+There is `Contributors.md` file in the main `first-contribution` folder.
+Open it any text editor and add you name followed by your Github Url. Don't add it on top or at the end, add it in the middle and save the file before closing it.
+
+<img align="right" width="450" src="https://firstcontributions.github.io/assets/Readme/git-status.png" alt="git status" />
+
+If you open the already opened git terminal and type in - `git status` you will find some changes made.
+Add those changes to you branch by typing - `git add .` or `git add filename.txt`, here filename is the name by which it is in the folder and .txt is the extenion of the actual file(it can be other than .txt).
+
+```
+git add .
+```
+
+Commit those changes by typing -
+```
+git commit -m "Add a message here that states your change"
+```
+Add an actual message in side those " "
+
+Push the changes made by you to the main branch by typing -
+```
+git push origin branchname
+```
+Here, add your specified branchname after origin.
+
+## Submit changes for review
+
+Open your Github repositorym you will find a `compare & pull request button`. Click it.
+
+<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" alt="create a pull request" />
+
+Click on `create pull request` button as shown in the image below;
+
+<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
+
+I will check all your pull requests, notify you with some changes if any and I'll merge them. You will get an email notifying anything regarding your pull request. 
